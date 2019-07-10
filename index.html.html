@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+        
+        box-sizing: border-box; 
+        }
+        html{
+            margin-top:0;
+        }
+        body{
+            margin-top: 0;
+            margin-right:auto;
+            margin-left:auto;
+        }
+        #all{
+            background-color: darkgray;
+            margin: 0 auto;
+            width: 1200px;
+            height: 500px;
+
+            padding-top:50px  
+         
+
+        }
+        #navBar{
+            background-color: lightslategrey;
+            width: 100%;
+            height: 50px;
+
+            position: relative;
+
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+            float:left;
+            margin-top:0; 
+            position: absolute;
+            right:0px;
+        }
+        #logo{
+            float:left;
+            line-height: 45px;
+            margin-left: 30px;
+        }
+        li{
+            line-height: 45px;
+            text-align: center;
+
+            
+        }
+        .Btn1{
+            width: 50px;
+            height: 50px;
+            background-color: darkorange;
+            float:left;
+   
+        }
+        .Btn2{
+            width: 50px;
+            height: 50px;
+            background-color: darkorange;
+            float:left;
+            margin-left:5px; 
+        }
+        .Btn3{
+            width: 50px;
+            height: 50px;
+            background-color: darkorange;
+            float:left;
+            margin-left:5px;
+        }
+        #benner{
+            margin-left:auto;
+            margin-right: auto; 
+            height: 380px;
+            width: 90%;
+            margin-top:10px;
+            margin-bottom:10px;
+        }
+        .boxL{
+            height: 100%;
+            width: calc(50% - 5px);
+            background-color: darkkhaki;
+            float: left;
+            margin-right:10px; 
+            text-align: center;
+            
+        }
+        .boxR{
+            height: 100%;
+            width: calc(50% - 5px);
+            float: left;
+        }
+        .SecB{
+            height:calc(50% - 5px);
+            width: calc(50% - 5px);
+            background-color: dimgrey;
+            float: left;
+            margin-right:10px; 
+            margin-bottom:10px; 
+            text-align: center;
+        }
+        
+        .SecC{
+            height:calc(50% - 5px);
+            width: calc(50% - 5px);
+            background-color: dimgrey;
+            float: left;
+            text-align: center;
+        }
+        .SecD{
+            height:calc(50% - 5px);
+            width: calc(50% - 5px);
+            background-color: dimgrey;
+            float: left;
+            margin-right:10px; 
+            text-align: center;
+        }
+        .SecE{
+            height:calc(50% - 5px);
+            width: calc(50% - 5px);
+            background-color: dimgrey;
+            float: left;
+            text-align: center;
+        }
+        
+        @media screen and (max-width:767px){
+        
+            .boxL{
+                width: 100%;
+            }
+            .boxR{
+                width: 100%;
+                margin-top:10px;
+            }
+            .SecB{
+                width: 100%;
+                
+            }
+            .SecC{
+                width: 100%;;
+                
+            }
+            .SecD{
+                width: 100%;
+                margin-top:10px;
+            }
+            .SecE{
+                width: 100%;
+                margin-top:10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="navBar">
+            <div id="logo">
+                Logo
+            </div>
+            <ul>
+                <li class="Btn1">Btn1</li>
+                <li class="Btn2">Btn2</li>
+                <li class="Btn3">Btn3</li>
+            </ul>
+        </div>
+        <div id="benner">
+            <div class="boxL">
+                A
+            </div>
+            <div class="boxR">
+                <div class="SecB">B</div>
+                <div class="SecC">C</div>
+                <div class="SecD">D</div>
+                <div class="SecE">E</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
