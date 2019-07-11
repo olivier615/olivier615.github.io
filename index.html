@@ -7,181 +7,307 @@
     <title>Document</title>
     <style>
         *{
-        
-        box-sizing: border-box; 
+            font-family: 微軟正黑體;
         }
-        html{
-            margin-top:0;
-        }
-        body{
-            margin-top: 0;
-            margin-right:auto;
-            margin-left:auto;
-        }
-        #all{
-            background-color: darkgray;
-            margin: 0 auto;
-            width: 1200px;
-            height: 500px;
+#all{
+    width: 100%;
+    height: calc(500vh + 50px);
+    background-color: darkgray;
+    
+}
+#benner{
+    width: 100%;
+    height: 80vh;
+    background-color: aquamarine;
+    
+}
+#contaner{
+    width: 100%;
+    height: calc(420vh - 50px);
+    background-color: lightgreen;
+    position: relative;
+    margin-left:auto; 
+    margin-right:auto; 
+}
+#contaner .navbar{
+    width: 1200px;
+    height: 50px;
+    background-color: darkcyan;
+    padding-left:50px; 
+    margin-left:auto;
+    margin-right:auto; 
+}
+#contaner .navbar .logo{
+    width: 50px;   
+    height: 50px;
+    background-color: slategrey;
+    float:left;
 
-            padding-top:50px  
-         
+}
+#contaner .navbar .nav_ul{
+    padding-top: 6px;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size:30px;       
+}
+#contaner .navbar .nav_ul .nav_li{
+    width: 130px;
+    height: 100%;
+    background-color: aquamarine;
+    text-align: center
+}
+.about{
+    width: 1772px;
+    height: 100vh;
+    background-color: darkolivegreen;
+    position: absolute;
+    top:calc(20vh + 50px);
+    left:50px;
+    display: flex;
+    justify-content: space-around;
+    /* background-image: url(pic/about_bac.jpg) */
+    }
 
-        }
-        #navBar{
-            background-color: lightslategrey;
-            width: 100%;
-            height: 50px;
+.about .about_RAV, .about .about_Bolas{
+    width: 886px;
+    height:600px;
+    /* background-color: darkgoldenrod; */
+    align-self: center;
+    }
+.about .about_RAV{
+    background-image:url(pic/about_RAV_pic.jpg)
+}
+.about .about_Bolas{
+    background-image: url(pic/about_about_Bolas.jpg)
+}
+.beacon{
+    width: 1200px;
+    height: 100vh;
+    background-color: darkgreen; 
+    position: absolute;
+    top:calc(120vh + 50px);
+    left:286px;
+    display: flex;
+    justify-content: space-around;
+    background-image:url(pic/beacon-pic.jpg);
+    background-position: cover;
+    
+}
+.beacon .ignite, .beacon .pic_Interplanar_Beacon{
+    width: 45%;
+    height: 80%;
+    background-color: darkgoldenrod;
+    align-self: center;
+}
+.pic_Interplanar_Beacon{
+    background-image:url(pic/pic_Interplanar_Beacon.jpg);
+}
+.camps{
+    width: 1200px;
+    height: 100vh;
+    background-color: teal; 
+    position: absolute;
+    top:calc(220vh + 50px);   
+    left:286px;   
+    background-image:url(pic/pic-camps.jpg);  
+}
+.camps .camps_title_box{
+    width: 45%;
+    height: 100px;
+    /* background-color: burlywood; */
+    margin-top:60px; 
+    margin-bottom:40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.camps .camps_title_box p{
+    text-align: center;
+    padding: 0;
+    line-height:100px;
+    color:ivory;
+}
+.camps .planswalker, .camps .elderspell{
+    width: 45%;
+    height: 80%;
+    background-color: darkgoldenrod;
+    float: left;
+    margin-left: 3%;
+}  
+.camps .planswalker .pic_planswalker{
+    width: 100%;
+    height: calc(50% - 10px);
+    background-color: darkgray;
+}
+.pic_planswalker{
+    background-image:url(pic/pic_planswalker.jpg); 
 
-            position: relative;
+}
+.camps .planswalker .text_planswalker{
+    width: 100%;
+    height: calc(50% - 10px);
+    background-color: darkgray;
+    margin-top:20px; 
+}
+.camps .elderspell .pic_elderspell{
+    width: 100%;
+    height: calc(50% - 10px);
+    background-color: darkgray;
+}
+.pic_elderspell{
+    background-image:url(pic/pic_elderspell.jpg);
+}
+.camps .elderspell .text_elderspell{
+    width: 100%;
+    height: calc(50% - 10px);
+    background-color: darkgray;
+    margin-top:20px; 
+}
+.despark{
+    width: 1200px;
+    height: 100vh;
+    background-color: lightseagreen; 
+    position: absolute;
+    top:calc(320vh + 50px); 
+    left:286px;  
+    background-image:url(pic/despark_pic.jpg);
+    background-position: top;
+}
+.despark .title_despark{
+    width: 45%;
+    height: 100px;
+    /* background-color: burlywood; */
+    margin-top:150px; 
+    margin-bottom:150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.despark .title_despark p{
+    text-align: center;
+    padding: 0;
+    line-height:100px;
+    color:honeydew;
 
-        }
-        ul{
-            list-style-type: none;
-            padding: 0;
-            float:left;
-            margin-top:0; 
-            position: absolute;
-            right:0px;
-        }
-        #logo{
-            float:left;
-            line-height: 45px;
-            margin-left: 30px;
-        }
-        li{
-            line-height: 45px;
-            text-align: center;
+}
+.despark .text_despark{
+    width: 80%;
+    height: 50%;
+    background-color: crimson;    
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: gold;
 
-            
-        }
-        .Btn1{
-            width: 50px;
-            height: 50px;
-            background-color: darkorange;
-            float:left;
-   
-        }
-        .Btn2{
-            width: 50px;
-            height: 50px;
-            background-color: darkorange;
-            float:left;
-            margin-left:5px; 
-        }
-        .Btn3{
-            width: 50px;
-            height: 50px;
-            background-color: darkorange;
-            float:left;
-            margin-left:5px;
-        }
-        #benner{
-            margin-left:auto;
-            margin-right: auto; 
-            height: 380px;
-            width: 90%;
-            margin-top:10px;
-            margin-bottom:10px;
-        }
-        .boxL{
-            height: 100%;
-            width: calc(50% - 5px);
-            background-color: darkkhaki;
-            float: left;
-            margin-right:10px; 
-            text-align: center;
-            
-        }
-        .boxR{
-            height: 100%;
-            width: calc(50% - 5px);
-            float: left;
-        }
-        .SecB{
-            height:calc(50% - 5px);
-            width: calc(50% - 5px);
-            background-color: dimgrey;
-            float: left;
-            margin-right:10px; 
-            margin-bottom:10px; 
-            text-align: center;
-        }
-        
-        .SecC{
-            height:calc(50% - 5px);
-            width: calc(50% - 5px);
-            background-color: dimgrey;
-            float: left;
-            text-align: center;
-        }
-        .SecD{
-            height:calc(50% - 5px);
-            width: calc(50% - 5px);
-            background-color: dimgrey;
-            float: left;
-            margin-right:10px; 
-            text-align: center;
-        }
-        .SecE{
-            height:calc(50% - 5px);
-            width: calc(50% - 5px);
-            background-color: dimgrey;
-            float: left;
-            text-align: center;
-        }
-        
-        @media screen and (max-width:767px){
-        
-            .boxL{
-                width: 100%;
-            }
-            .boxR{
-                width: 100%;
-                margin-top:10px;
-            }
-            .SecB{
-                width: 100%;
-                
-            }
-            .SecC{
-                width: 100%;;
-                
-            }
-            .SecD{
-                width: 100%;
-                margin-top:10px;
-            }
-            .SecE{
-                width: 100%;
-                margin-top:10px;
-            }
-        }
-    </style>
+}
+h1{
+    font-size:50px;
+}
+h3{
+    font-size: 22px;
+    line-height: 40px;
+}
+
+</style>
 </head>
 <body>
     <div id="all">
-        <div id="navBar">
-            <div id="logo">
-                Logo
+        <div id="benner"></div>
+        <div id="contaner">
+            <div class="navbar">
+                <div class="logo"></div>
+                <ul class=nav_ul>
+                    <li class=nav_li >火花之戰</li>
+                    <li class=nav_li >點燃信標</li>
+                    <li class=nav_li >入侵城市</li>
+                    <li class=nav_li >滅除火花</li>
+                </ul>
             </div>
-            <ul>
-                <li class="Btn1">Btn1</li>
-                <li class="Btn2">Btn2</li>
-                <li class="Btn3">Btn3</li>
-            </ul>
-        </div>
-        <div id="benner">
-            <div class="boxL">
-                A
+            <div class="about">
+                <div class="about_RAV">
+                    <h3>
+                        <p>拉尼卡是個巨大的城市～互相連接的巨大廳堂，破舊的貧民窟，古老的遺跡，當中夾雜著層層的石造建築～以及各公會的謀略。
+
+                        而在這世界無數的城市中心，拉尼卡這城市比其他的都更有影響力；這是個廣大無邊，甚至其名稱自遠古以來就當作此時空代名詞的大都會。而在這錯綜複雜的街道、高聳的哥德式尖塔之中，拉尼卡的公會彼此爭奪著力量與主控權。
+                        
+                        十個公會都由五種魔法力顏色中的兩種所組成，且也都具有自己獨特的文化認同與重要功能。
+                        </p>
+                    </h3>
+                </div>
+                <div class="about_Bolas">
+                    <h3>
+                        <p>
+                            龍族的長老，世界的暴君；尼可波拉斯是多重宇宙中已知的最古老人物之一。
+ 
+                            這頭對於魔法力極度饑渴的巨龍能夠使用藍色、黑色和紅色三種魔法，他掌握著邪惡的毀滅力量，能夠粉碎一切敢於阻擋他的魔法和生靈。
+                         
+                            尼可波拉斯經歷過許多場戰爭、巨大災禍與對決，他是龍族戰爭後僅存的五位龍長老之一。梅澤鐵雄摧毀他在多明納里亞的馬達拉帝國時，波拉斯逃過一劫；與拉席克、泰菲力這 兩位旅法師的壯絕對決，波拉斯也活了下來；多重宇宙的世界癒合也讓他平安度過，這是讓好幾位旅法師拼上性命、並讓旅法師火花產生質變的巨大變異。
+                        </p>
+                    </h3>
+                </div>
             </div>
-            <div class="boxR">
-                <div class="SecB">B</div>
-                <div class="SecC">C</div>
-                <div class="SecD">D</div>
-                <div class="SecE">E</div>
+            <div class="beacon">
+                <div class="ignite">
+                    <h3>
+                        <p>
+                            拉尼卡的年輕法師拉爾查雷克才華橫溢、難以預測又大膽勇敢，他總是在挑戰極限和膽量。他聰明無畏的技藝讓其能夠自如駕馭閃電和風暴的混亂能量。
+ 
+                            他最初受到伊捷聯盟的瘋狂創意所吸引，沉迷於發現之中。靠著不懼危險的精神和橫溢的才華，拉爾查雷克在伊捷平步青雲。
+                         
+                            成為旅法師後，他不再受限於拉尼卡，但依然忠於這個時空以及助他成長的公會。因此，當公會再次崛起時，拉爾回到了自己的家園。他已經準備好為引領他成長的伊捷公會奮鬥了。
+                            在尼可波拉斯率領永生大軍摧殘拉尼卡時，拉爾查雷克燃起了跨時空信標向多重宇宙的旅法師尋求援助。
+                        </p>
+                    </h3>
+                </div>
+                <div class="pic_Interplanar_Beacon"></div>
             </div>
-        </div>
+            <div class="camps">
+                <div class="camps_title_box">
+                    <h1><p>入侵城市</p></h1>
+                </div>
+                <div class="planswalker">
+                    <div class="pic_planswalker"></div>
+                    <div class="text_planswalker">
+                        <h3>
+                            <p>
+                                多重宇宙的旅法師們紛紛加入這場火花之戰，有些旅法師協助拉尼卡抵禦外敵，也有旅法師加入永生大軍的行列，其中也不乏需要解決的私人恩怨。
+                            </p>
+                        </h3>
+                    </div>
+                </div>
+                <div class="elderspell">
+                    <div class="pic_elderspell"></div>
+                    <div class="text_elderspell">
+                        <h3>
+                            <p>
+                                另一方面，正當拉尼卡的居民起身反抗，也有不少公會選擇加入巨龍的麾下，甚至從中取樂。
+                            </p>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="despark">
+                <div class="title_despark">
+                    <h1>
+                        <p>
+                            滅除火花
+                        </p>
+                    </h1>
+                </div>
+                <div class="text_despark">
+                    <h3>
+                        <p>
+                            僅存的龍長老最終在基定的犧牲，瓦絲卡、莉蓮娜的背叛與靈龍烏金的協助下，被褫奪了姓名，逐入虛無之境。他一輩子處心積慮安排了這場戰爭，如今他有永生的時間來悔恨。
+                        </p>
+                    </h3>>
+                </div>
+            </div>
+            </div>
+        <div class="footer"></div>
     </div>
+    
 </body>
 </html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #all{
+            width: 1920px;
+            height: 100vh;
+            background-color: lightgray;
+            margin-left:auto; 
+            margin-right:auto; 
+        }
+        #navbar{
+            width: 20%;
+            height: 100vh;
+            background-color: grey;
+            float:left;
+            position: relative;
+        }
+        #navbar .logo{
+            width: 150px;
+            height: 150px;
+            background-color: black;
+            position: absolute;
+            left:calc(50% - 75px);
+            top:calc(15% - 75px);   
+            color:azure;
+            font-size: 30px;     
+            text-align: center;   
+        }
+        #navbar .secbox{
+            position: absolute;
+            left:calc(50% - 75px);
+            top:calc(35% - 75px);
+            width: 150px;
+            height: 50%;
+            display: none;
+        }
+        
+        #navbar .navsec{
+            padding: 0;
+            list-style-type: none;          
+            color: azure;
+            text-align: center;
+            font-size: 30px;
+            display: none;              
+        }
+        @media only screen and (min-width:375px){
+            #navbar .secbox{
+                display:block; 
+            }
+            #navbar .navsec{
+                display:block; 
+            }
+        }
+        .benner{
+            width: 80%;
+            height: 100vh;
+            background-color: burlywood;
+            float:left;
+            position: relative;
+        }
+        .benner .bennerpic{
+            width: 960px;
+            height: 570px;
+            background-color: darksalmon;
+            position: absolute;
+            top:calc(50% - 285px);
+            left:calc(50% - 480px);
+            background-image: url(pic/a444.jpg);
+            background-position:center;
+
+        }
+        .benner .bennerpic .picX{
+            width: calc(33% - 10px);
+            height: 100%;
+            float:left;
+            margin-right:10px; 
+            color:azure;
+            font-size: 30px;
+            text-align: center;
+            background-image: url(pic/a111.jpg);
+            background-position:center;
+        }
+        .benner .bennerpic .picY{
+            width: calc(33% - 10px);
+            height: 100%;
+            background-color: darkgray;
+            float:left;
+            margin-right:10px;
+            color:azure;
+            font-size: 30px;
+            text-align: center; 
+            background-image: url(pic/a222.jpg);
+            background-position:center;
+        }
+        .benner .bennerpic .picZ{
+            width: 34%;
+            height: 100%;
+            background-color: darkgray;
+            float:left;
+            color:azure;
+            font-size: 30px;
+            text-align: center;
+            background-image: url(pic/a333.jpg);
+            background-position:top;
+        }
+        .benner .bennerpic .picX:hover{
+            opacity: 0;
+            transition-delay: 0.5s;
+            transition-duration: 2s;
+        }
+        .benner .bennerpic .picY:hover{
+            opacity: 0;
+            transition-delay: 0.5s;
+            transition-duration: 2s;
+        }
+        .benner .bennerpic .picZ:hover{
+            opacity: 0;
+            transition-delay: 0.5s;
+            transition-duration: 2s;
+        }
+        #navbar .secbox li:hover{
+            background-color: greenyellow;
+            color:grey;
+        }
+    @media screen and (max-width:1280px){
+        #all{
+            width: 1280px;
+            height: 100vh;
+            background-color: lightblue;
+            margin-left:auto; 
+            margin-right:auto; 
+        }
+        #navbar{
+            width: 400px;
+            height: 100%;
+            background-color: grey;
+            position: relative;
+            float: left;
+        }
+        #navbar .logo{
+            width: 150px;
+            height: 150px;
+            background-color: black;
+            color: azure;
+            position: absolute;
+            left:calc(50% - 75px);
+            top:calc(15% - 75px);
+            text-align: center;  
+            font-size: 30px;  
+        }
+        #navbar .secbox{
+            width: 150px;
+            height: 50%;
+            position: absolute;
+            left:calc(50% - 75px);
+            top:calc(35% - 75px);
+        }
+        #navbar .secbox .navsec{
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            font-size: 30px;  
+        }
+        .benner{
+            width: 880px;
+            height: 100vh;
+            background-color: burlywood;
+            float: left;
+            position: relative;
+        }
+        .benner .bennerpic{
+            width: 800px;
+            height: 570px;
+            background-color: darkseagreen;
+            position: absolute;
+            top:calc(50% - 285px);
+            left:calc(50% - 400px);
+            background-image: url(pic/a444.jpg);
+            background-position:center;
+        }
+        .benner .bennerpic .picX{
+            width: 100%;
+            height: calc(50% - 5px);
+            background-color: darkgray;
+            float:left;
+            margin-bottom:5px; 
+            color:azure;
+            font-size: 30px;
+            text-align: center;
+            background-image: url(pic/a111.jpg);
+            background-position:cover;
+        }
+        .benner .bennerpic .picY{
+            width: calc(50% - 5px);
+            height: calc(50% - 5px);
+            background-color: darkgray;
+            float:left;
+            margin-top:5px;
+            margin-right:5px; 
+            color:azure;
+            font-size: 30px;
+            text-align: center; 
+            background-image: url(pic/a222.jpg);
+            background-position:top;
+            
+        }
+        .benner .bennerpic .picZ{
+            width: calc(50% - 5px);
+            height: calc(50% - 5px);
+            background-color: darkgray;
+            margin-top:5px;
+            margin-left:5px; 
+            float:left;
+            color:azure;
+            font-size: 30px;
+            text-align: center;
+            background-image: url(pic/a333.jpg);
+            background-position:center;
+        }
+        .benner .bennerpic .picX:hover{
+            opacity: 0;
+            transition-delay: 0.5s;
+            transition-duration: 2s;
+        }
+        .benner .bennerpic .picY:hover{
+            opacity: 0;
+            transition-delay: 0.5s;
+            transition-duration: 2s;
+        }
+        .benner .bennerpic .picZ:hover{
+            opacity: 0;
+            transition-delay: 0.5s;
+            transition-duration: 2s;
+        }
+        #navbar .secbox li:hover{
+            background-color: greenyellow;
+            color:grey;
+        }
+    }
+    @media screen and (max-width:768px){
+      
+        #all{
+        width: 768px;
+        height: 100vh;
+        background-color: lightpink;
+        margin-left:auto; 
+        margin-right:auto; 
+    }
+    #navbar{
+        height: 120px;
+        width: 100%;
+        background-color: grey;
+        position: relative;
+    }
+    #navbar .logo{
+        height: 90px;
+        width: 120px;
+        background-color: black;
+        color: azure;
+        position: absolute;
+        top:calc(50% - 45px);
+        left:15px;
+    }
+    #navbar .secbox{
+        height: 120px;
+        width: 50%;
+        position: relative;
+        
+    }
+    #navbar .secbox .navsec{
+        padding: 0;
+        list-style-type: none;
+        font-size: 30px;
+        position: absolute;
+        top:30%;
+        right:20%; 
+        height: 100px;
+        width: 80%;
+    
+    }
+    #navbar .secbox .navsec li{
+        float: left;     
+        font-size: 15px; 
+        height: 50px;
+        width: 30%;
+
+
+    }
+    #navbar .secbox .navsec .li{
+        margin-right:50px; 
+    }
+   
+
+    
+    .benner{
+        height: calc(100vh - 120px);
+        width: 100%;
+        background-color: burlywood;
+        position: relative;
+    }
+    .benner .bennerpic{
+        height: 90%;
+        width: 90%;
+        background-color: pink;
+        position: absolute;
+        top:5%;
+        left:5%;
+        background-image: url(pic/a444.jpg);
+        background-position:center;
+    }
+    .benner .bennerpic .picX{
+        width: 100%;
+        height: calc(50% - 5px);
+        background-color: orange;
+        margin-bottom:5px; 
+        background-image: url(pic/a111.jpg);
+        background-position:center;
+    }
+    .benner .bennerpic .picY{
+        width: calc(50% - 5px);
+        height: calc(50% - 5px) ;
+        background-color: orange;
+        float:left;
+        margin-top:5px;
+        margin-right:5px;  
+        background-image: url(pic/a222.jpg);
+        background-position:center;
+    }
+    .benner .bennerpic .picZ{
+        width: calc(50% - 5px);
+        height: calc(50% - 5px) ;
+        background-color: orange;
+        float:left;
+        margin-top:5px;
+        margin-left:5px;  
+        background-image: url(pic/a333.jpg);
+        background-position:top;
+    }
+    .benner .bennerpic .picX:hover{
+            opacity: 0;
+            transition-delay: 0.5s;
+            transition-duration: 2s;
+        }
+        .benner .bennerpic .picY:hover{
+            opacity: 0;
+            transition-delay: 0.5s;
+            transition-duration: 2s;
+        }
+        .benner .bennerpic .picZ:hover{
+            opacity: 0;
+            transition-delay: 0.5s;
+            transition-duration: 2s;
+        }
+        #navbar .secbox li:hover{
+            background-color: greenyellow;
+            color:grey;
+        }
+    }
+    @media screen and (max-width:375px){
+        #all{
+        height: 100vh;
+        width: 375px;
+        background-color: darkolivegreen;
+        margin-left:auto; 
+        margin-right:auto; 
+    }
+    #navbar{
+        height: 80px;
+        width: 100%;
+        background-color: grey;
+        position: relative;
+    }
+    #navbar .logo{
+        height: 50px;
+        width: 120px;
+        background-color: black;
+        color: azure;
+        position: absolute;
+        top:calc(50% - 25px);
+        left:calc(50% - 60px);
+    }
+    #navbar .burgerbox{
+        width: 40px;
+        height: 50px;
+        background-color: lightgreen;
+        position: absolute;
+        top:calc(50% - 25px);
+        left:20px;
+        
+    }
+    #navbar .burgerbox .bursec{
+        width: 80%;
+        height: 80%;
+        background-color: aquamarine;
+        margin:10%; 
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    #navbar .burgerbox .bursec .bur1{
+        width: 90%;
+        height: 14%;
+        background-color: darkgreen;
+ 
+    }
+    #navbar .burgerbox .bursec .bur2{
+        width: 90%;
+        height: 14%;
+        background-color: darkgreen;
+    }
+    #navbar .burgerbox .bursec .bur3{
+        width: 90%;
+        height: 14%;
+        background-color: darkgreen;
+    }
+    .benner{
+        height: calc(100vh - 80px);
+        width: 100%;
+        background-color: burlywood;
+        position: relative;
+    }
+    .benner .bennerpic{
+        height: calc(100% - 20px);
+        width: calc(100% - 20px);
+        background-color: darkcyan;
+        position: absolute;
+        top:10px;
+        left:10px;
+        background-image: url(pic/a444.jpg);
+        background-position:center;
+    }
+    .benner .bennerpic .picX{
+        height: calc(33% - 6.6px);
+        width: 100%;
+        background-color: lightgreen;
+        margin-bottom:10px; 
+        background-image: url(pic/a111.jpg);
+        background-position:center;
+    }
+    .benner .bennerpic .picY{
+        height: calc(34% - 6.6px);
+        width: 100%;
+        background-color: lightgreen;
+        margin-bottom:10px; 
+        background-image: url(pic/a222.jpg);
+        background-position:center;
+    }
+    .benner .bennerpic .picZ{
+        height: calc(33% - 6.6px);
+        width: 100%;
+        background-color: lightgreen;
+        background-image: url(pic/a333.jpg);
+        background-position:top;
+    }
+    }
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="navbar">
+            <div class="logo">Ceropegia</div>
+            <div class="secbox">
+                    <ul class="navsec">
+                    <li><a href="https://www.pinterest.com/pin/170644273353866324/" target=_blank>左-薄雲</a></li>
+                    <li><a href="https://www.pinterest.com/pin/417638565442344686/" target=_blank>中-天邪鬼</a></li>
+                    <li><a href="https://www.pinterest.com/pin/387239267929837422/" target=_blank>右-水瓶座</a></li>
+                    </ul>
+            </div>
+            <div class="burgerbox">
+                <div class="bursec">
+                    <div class="bur1"></div>
+                    <div class="bur2"></div>
+                    <div class="bur3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="benner">
+            <div class="bennerpic">
+                <div class="picX"></div>
+                <div class="picY"></div>
+                <div class="picZ"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

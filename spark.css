@@ -1,0 +1,162 @@
+#all{
+    width: 1200px;
+    height: calc(500vh + 50px);
+    background-color: darkgray;
+    
+}
+#benner{
+    width: 100%;
+    height: 80vh;
+    background-color: aquamarine;
+}
+#contaner{
+    width: 100%;
+    height: calc(420vh - 50px);
+    background-color: lightgreen;
+    position: relative;
+}
+#contaner .navbar{
+    width: calc(100% - 50px);
+    height: 50px;
+    background-color: darkcyan;
+    padding-left:50px; 
+}
+#contaner .navbar .logo{
+    width: 50px;   
+    height: 50px;
+    background-color: slategrey;
+    float:left;
+
+}
+#contaner .navbar .nav_ul{
+    padding-top: 6px;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size:30px;       
+}
+#contaner .navbar .nav_ul .nav_li{
+    width: 130px;
+    height: 100%;
+    background-color: aquamarine;
+    text-align: center
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    background-color: darkolivegreen;
+    position: absolute;
+    top:calc(20vh + 50px);
+    display: flex;
+    justify-content: space-around;
+    background-image: url(pic/about_bac.jpg)
+    }
+.about .about_RAV, .about .about_Bolas{
+    width: 45%;
+    height: 80%;
+    background-color: darkgoldenrod;
+    align-self: center;
+    }
+.about .about_RAV{
+    background-image:url(pic/about_RAV_pic.jpg)
+}
+.about .about_Bolas{
+    
+}
+.beacon{
+    width: 100%;
+    height: 100vh;
+    background-color: darkgreen; 
+    position: absolute;
+    top:calc(120vh + 50px);
+    display: flex;
+    justify-content: space-around;
+}
+.beacon .ignite, .beacon .pic_Interplanar_Beacon{
+    width: 45%;
+    height: 80%;
+    background-color: darkgoldenrod;
+    align-self: center;
+}
+.camps{
+    width: 100%;
+    height: 100vh;
+    background-color: teal; 
+    position: absolute;
+    top:calc(220vh + 50px);        
+}
+.camps .camps_title_box{
+    width: 45%;
+    height: 100px;
+    background-color: burlywood;
+    margin-top:60px; 
+    margin-bottom:40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.camps .camps_title{
+    width: 30%;
+    height: 100px;
+    background-color: crimson;    
+    margin-right: auto;
+    margin-left: auto;
+}
+.camps .planswalker, .camps .elderspell{
+    width: 45%;
+    height: 80%;
+    background-color: darkgoldenrod;
+    float: left;
+    margin-left: 3%;
+}  
+.camps .planswalker .pic_planswalker{
+    width: 100%;
+    height: calc(50% - 10px);
+    background-color: darkgray;
+}
+.camps .planswalker .text_planswalker{
+    width: 100%;
+    height: calc(50% - 10px);
+    background-color: darkgray;
+    margin-top:20px; 
+}
+.camps .elderspell .pic_elderspell{
+    width: 100%;
+    height: calc(50% - 10px);
+    background-color: darkgray;
+}
+.camps .elderspell .text_elderspell{
+    width: 100%;
+    height: calc(50% - 10px);
+    background-color: darkgray;
+    margin-top:20px; 
+}
+.despark{
+    width: 100%;
+    height: 100vh;
+    background-color: lightseagreen; 
+    position: absolute;
+    top:calc(320vh + 50px);        
+}
+.despark .title_despark{
+    width: 45%;
+    height: 100px;
+    background-color: burlywood;
+    margin-top:150px; 
+    margin-bottom:150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.despark .text_despark{
+    width: 80%;
+    height: 50%;
+    background-color: crimson;    
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: gold;
+
+}
