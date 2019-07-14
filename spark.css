@@ -62,9 +62,11 @@ margin-right:auto;
 #contaner .navbar{
 width: 1200px;
 height: 50px;
-background-color: black;
+background-color: dimgray;
 margin-left:calc(50% - 600px);
 float:left;
+border-radius: 30px;
+background-image: url(pic/Slide1.jpg)
 }
 #contaner .navbar .logo{
 width: 80px;   
@@ -87,7 +89,7 @@ color:wheat
 #contaner .navbar .nav_ul .nav_li{
 width: 130px;
 height: 100%;
-background-color: black;
+/* background-color: gray; */
 text-align: center
 }
 .about{
@@ -118,12 +120,12 @@ position: relative;
     color: aliceblue;
 }
 .about .about_text .about_text_RAV h3{
-    line-height: 50px;
+    line-height: 40px;
     margin-left:10%; 
     margin-right:10%;
 }
 .about .about_text .about_text_Bolas h3{
-    line-height: 50px;
+    line-height: 40px;
     margin-left:10%; 
     margin-right:10%;
 }
@@ -174,7 +176,19 @@ height: 80%;
 /* background-color: darkgoldenrod; */
 align-self: center;
 }
-
+.beacon .ignite{
+    background-color:rgba(0, 0, 0, 0.2);
+    color:white;
+}
+.beacon .ignite h3{
+    margin: 10%;
+}
+.beacon .ignite h3 p{
+    margin: 0;
+}
+.beacon .pic_Interplanar_Beacon:hover{
+    opacity: 0;
+}
 .pic_Interplanar_Beacon{
 background-image:url(pic/pic_Interplanar_Beacon.jpg);
 align-self: center;
@@ -221,9 +235,21 @@ background-image:url(pic/pic_planswalker.jpg);
 .camps .planswalker .text_planswalker{
 width: 100%;
 height: calc(30% - 10px);
-background-color: darkgray;
+background-color: rgba(0, 0, 0, 0.2);
 margin-top:20px; 
 border-radius:10px; 
+}
+.camps .planswalker .text_planswalker p{
+    margin: 5%;
+    margin-top: 3%;
+    float:left;    
+    color: #eee
+}
+.camps .elderspell .text_elderspell p{
+    margin: 5%;
+    margin-top: 3%;
+    float:left; 
+    color: #eee   
 }
 .camps .elderspell .pic_elderspell{
 width: 100%;
@@ -236,7 +262,7 @@ background-image:url(pic/pic_elderspell.jpg);
 .camps .elderspell .text_elderspell{
 width: 100%;
 height: calc(30% - 10px);
-background-color: darkgray;
+background-color: rgba(0, 0, 0, 0.2);
 margin-top:20px; 
 border-radius:10px; 
 }
@@ -268,15 +294,22 @@ color:honeydew;
 .despark .text_despark{
 width: 80%;
 height:15%;
-background-color: grey;    
+background-color: rgba(0, 0, 0, 0.2);    
 margin-right: auto;
 margin-left: auto;
 border-radius: 10px;
 }
+.despark .text_despark p{
+    margin: 5%;
+    margin-top: 2%;
+    float:left; 
+    color: #eee  
+}
 .footer{
 width: 100%;
-height: 70px;
-background-color: gold;
+height: 50px;
+background-color: darkgrey;
+text-align: center;
 
 }
 h1{
@@ -284,9 +317,13 @@ font-size:50px;
 }
 h3{
 font-size: 22px;
-line-height: 40px;
+line-height: 30px;
 }
 img{
     width: auto;
     height: calc(100vh - 50px);
+}
+a{
+    color:wheat;
+    text-decoration:none;
 }
