@@ -7,7 +7,9 @@
     <title>Document</title>
    <link rel="stylesheet" href="spark.css">
    <link href="/fontawesome-free-5.9.0-web/css/all.css" rel="stylesheet">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+   
 </head>
 <body>
     <div id="all">
@@ -93,7 +95,7 @@
                     <h1><p>入侵城市</p></h1>
                 </div>
                 <div class="planswalker">
-                    <div class="pic_planswalker"></div>
+                    <div data-aos="zoom-in" class="pic_planswalker"></div>
                     <div class="text_planswalker">
                         <h3>
                             <p>
@@ -103,7 +105,7 @@
                     </div>
                 </div>
                 <div class="elderspell">
-                    <div class="pic_elderspell"></div>
+                    <div data-aos="zoom-in" class="pic_elderspell"></div>
                     <div class="text_elderspell">
                         <h3>
                             <p>
@@ -132,12 +134,24 @@
             </div>
         <div class="footer"><h5><p>以上內容取材自<a href="https://magic.wizards.com/zh-hant">Magic the Gathering</a></p></h5></div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+   
+   
+
+   <script src="jquery-3.4.1.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+        AOS.init();
+        </script>
+    
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
    <!-- Swiper JS -->
   <script src="../dist/js/swiper.min.js"></script>
 
+  
+
+  
   <!-- Initialize Swiper -->
-  <script>
+  <script>  
     var swiper = new Swiper('.swiper-container');
   </script>
 </body>
