@@ -29,6 +29,7 @@
         body {
             position: relative;
             height: 100%;
+            width: 100%;
         }
 
         body {
@@ -184,7 +185,7 @@
         }
 
         .crisis {
-            background-color: rgb(26,26,26);
+            background-color: rgb(26, 26, 26);
         }
 
         .crisis_pic1 {
@@ -252,13 +253,7 @@
             background-image: url(pic/overload_bac-1.jpg);
             background-position: center;
             background-size: cover;
-            -webkit-backgound-size: cover;
-            -o-backgound-size: cover;
-            -moz-backgound-size: cover;
             background-attachment: fixed;
-            -webkit-background-attachment: fixed;
-            -o-background-attachment: fixed;
-            -moz-background-attachment: fixed;
             overflow: hidden;
         }
 
@@ -461,11 +456,6 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            -webkit-background-position: center;
-            -webkit-background-repeat: no-repeat;
-            -webkit-background-size: cover;
-            -o-backgound-size: cover;
-            -moz-backgound-size: cover;
             box-shadow: inset 0px -50px 50px -10px rgba(20%, 20%, 40%, .5), inset 0px 50px 50px -10px rgba(20%, 20%, 40%, .5);
         }
 
@@ -477,11 +467,6 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            -webkit-background-position: center;
-            -webkit-background-repeat: no-repeat;
-            -webkit-background-size: cover;
-            -o-backgound-size: cover;
-            -moz-backgound-size: cover;
             box-shadow: inset 0px -50px 50px -10px rgba(102, 34, 22, 0.5), inset 0px 50px 50px -10px rgba(102, 34, 22, 0.5);
 
         }
@@ -494,11 +479,6 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            -webkit-background-position: center;
-            -webkit-background-repeat: no-repeat;
-            -webkit-background-size: cover;
-            -o-backgound-size: cover;
-            -moz-backgound-size: cover;
             box-shadow: inset 0px -50px 50px -10px rgba(3, 3, 3, 0.5), inset 0px 50px 50px -10px rgba(3, 3, 3, 0.5);
         }
 
@@ -509,8 +489,15 @@
             height: 50vh;
             justify-content: center;
             align-items: center;
+        }
 
-
+        @media (max-width:768px) {
+            .pollution_banner_top,
+            .pollution_banner_mid,
+            .pollution_banner_btm,
+            .overload{
+                background-attachment:scroll;
+            }
         }
 
 
@@ -530,12 +517,13 @@
             background-position: center;
             background-size: cover;
             background-attachment: fixed;
-            -webkit-background-attachment: fixed;
-            -o-background-attachment: fixed;
-            -moz-background-attachment: fixed;
-            -webkit-backgound-size: cover;
-            -o-backgound-size: cover;
-            -moz-backgound-size: cover;
+
+        }
+        @media (max-width:768px){
+            .exotic_bacc{
+                background-position:top left;
+                background-attachment:scroll;
+            }
         }
 
         .exotic_title {
@@ -584,7 +572,7 @@
         .exotic_mid_img {
             background-image: url("./pic/exotic_mid_img.jpg");
             background-position: center;
-            background-size: cover;     
+            background-size: cover;
         }
 
         .exotic_btm_img {
@@ -1075,7 +1063,8 @@
 
             </div>
             <div class="row exotic_mid">
-                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12 col-12 order-xl-1 order-lg-1 order-md-1 order-sm-2 order-2 exotic_mid_text">
+                <div
+                    class="col-xl-6 col-md-6 col-lg-6 col-sm-12 col-12 order-xl-1 order-lg-1 order-md-1 order-sm-2 order-2 exotic_mid_text">
                     <h2>
                         <p>
                             互花米草
@@ -1092,7 +1081,8 @@
                         </p>
                     </h3>
                 </div>
-                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12 col-12 order-xl-2 order-lg-2 order-md-2 order-sm-1 order-1 exotic_mid_img">
+                <div
+                    class="col-xl-6 col-md-6 col-lg-6 col-sm-12 col-12 order-xl-2 order-lg-2 order-md-2 order-sm-1 order-1 exotic_mid_img">
 
                 </div>
 
