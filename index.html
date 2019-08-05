@@ -39,9 +39,9 @@
             left: 2%;
             top: 2vh;
             z-index: 500;
-         
- 
-            
+
+
+
         }
 
         .nav-link {
@@ -50,7 +50,8 @@
             color: white;
             background-color: rgba(0, 0, 0, 0.5)
         }
-        .btn{
+
+        .btn {
             padding: 0;
 
 
@@ -68,14 +69,21 @@
             overflow: hidden;
             position: relative;
         }
-        .navbar-toggler-icon{
-            background-color: #6B8E4E;
+
+        .navbar-toggler-icon {
+            background-image: url(pic/menu-2.png);
+            background-color: rgba(104, 142, 78, 1);
+            width: 50px;
+            height: 50px;
             position: fixed;
             top: 1vh;
-            left:5px;
+            left: 5px;
+            border-radius: 50%;
             
+
         }
-        .logo{
+
+        .logo {
             min-height: 200px;
             min-width: 200px;
             background-image: url("pic/logo-2.png");
@@ -83,8 +91,17 @@
             background-size: cover;
             z-index: 5000;
             position: absolute;
-            right:15%;
+            right: 15%;
             bottom: 20%;
+        }
+
+        @media (max-width:768px) {
+            .logo {
+                min-height: 100px;
+                min-width: 100px;
+                right: 10%;
+                bottom: 10%;
+            }
         }
 
 
@@ -228,8 +245,9 @@
             height: 50vh;
 
         }
-        .note_text h4{
-            color:white;
+
+        .note_text h4 {
+            color: white;
         }
 
         .note_top_text,
@@ -321,7 +339,7 @@
 
             .blank {
                 min-height: 25vh;
-               
+
             }
 
             .note_photo {
@@ -344,7 +362,13 @@
         /* 植感分享 */
         .share_swiper-container {
             width: 100%;
+            height: 80%;
+        }
+        @media (max-width:768px){
+            .share_swiper-container {
+            width: 100%;
             height: 100%;
+        } 
         }
 
         .share_swiper-slide {
@@ -552,7 +576,7 @@
             border-bottom: 1px solid white;
         }
 
-        .website h4 a:hover {
+        .website  a:hover {
             color: darkkhaki;
         }
 
@@ -640,26 +664,26 @@
                     <a class="nav-link" href="http://www.instagram.com/ambienvert" target="_blank">Instagram</a>
                 </li>
                 <li class="nav-item active">
-                        <a class="nav-link" href="#banner">回到頂層</a>
-                    </li>
+                    <a class="nav-link" href="#banner">回到頂層</a>
+                </li>
             </ul>
         </div>
-        <button class="navbar-toggler btn"  data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+        <button class="navbar-toggler btn" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
     </div>
     <div class="banner container" id="banner">
         <div class="swiper-container banner_swiper-container">
-                <div class="logo">
+            <div class="logo">
 
-                    </div>
+            </div>
             <div class="swiper-wrapper banner_swiper-wrapper">
-                <div class="swiper-slide banner_swiper-slide"style="background-image: url('pic/slide_1.jpg');"></div>
-                <div class="swiper-slide banner_swiper-slide"style="background-image: url('pic/slide_2.jpg');"></div>
-                <div class="swiper-slide banner_swiper-slide"style="background-image: url('pic/slide_3.jpg');"></div>
-                <div class="swiper-slide banner_swiper-slide"style="background-image: url('pic/slide_4.jpg');"></div>
-                <div class="swiper-slide banner_swiper-slide"style="background-image: url('pic/slide_5.jpg');"></div>
+                <div class="swiper-slide banner_swiper-slide" style="background-image: url('pic/slide_1.jpg');"></div>
+                <div class="swiper-slide banner_swiper-slide" style="background-image: url('pic/slide_2.jpg');"></div>
+                <div class="swiper-slide banner_swiper-slide" style="background-image: url('pic/slide_3.jpg');"></div>
+                <div class="swiper-slide banner_swiper-slide" style="background-image: url('pic/slide_4.jpg');"></div>
+                <div class="swiper-slide banner_swiper-slide" style="background-image: url('pic/slide_5.jpg');"></div>
             </div>
             Add Pagination
             <div class="swiper-pagination"></div>
@@ -991,35 +1015,39 @@
         </div>
         <div class="website_share row">
             <div class="website_share_1 col-xl-5 col-lg-5 col-md-5 col-sm-10 col-10">
+                <a href="https://www.fenko.com.tw/fenkomoss/" target="_blank">
                 <div class="website_share_1_pic web_pic">
 
                 </div>
                 <div class="website_share_1_text">
                     <h4>
-                        <a href="https://www.fenko.com.tw/fenkomoss/" target="_blank">
+                        
                             智能苔牆
-                        </a>
+                       
                     </h4>
                     <h5>
                         看起來很可愛，上面的苔還是偏向水族的苔，不知道有沒有像日本青苔販售那樣有多樣的品種選擇，但弄成這樣確實蠻有效果就是了。
                     </h5>
                 </div>
+            </a>
             </div>
             <div class="website_share_2 col-xl-5 col-lg-5 col-md-5 col-sm-10 col-10">
+                    <a href="http://modernliving.jp/shimizu/shimizu_20180811?fbclid=IwAR3EDdQ6ukSbyh1YBpWLN4a0I0pkzE2k1nrswCMpfTJcS2d49u02i_bp5dY"
+                    target="_blank">
                 <div class="website_share_2_pic web_pic">
 
                 </div>
                 <div class="website_share_2_text">
                     <h4>
-                        <a href="http://modernliving.jp/shimizu/shimizu_20180811?fbclid=IwAR3EDdQ6ukSbyh1YBpWLN4a0I0pkzE2k1nrswCMpfTJcS2d49u02i_bp5dY"
-                            target="_blank">
+                        
                             BRUTUS CASA
-                        </a>
+                        
                     </h4>
                     <h5>
                         本期BRUTUS CASA裡面介紹的主題之一，是日本園藝景觀設計師"齊藤太一"的私人住宅，由一位長期旅居巴黎的日本建築師田根剛所設計。
                     </h5>
                 </div>
+            </a>
             </div>
         </div>
     </div>
