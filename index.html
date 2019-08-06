@@ -1040,9 +1040,7 @@
                     </div>
                     <div class="website_share_2_text">
                         <h4>
-
                             BRUTUS CASA
-
                         </h4>
                         <h5>
                             本期BRUTUS CASA裡面介紹的主題之一，是日本園藝景觀設計師"齊藤太一"的私人住宅，由一位長期旅居巴黎的日本建築師田根剛所設計。
@@ -1123,7 +1121,14 @@
                 el: '#share .swiper-pagination',
                 clickable: true,
             },
-            observer:true,
+            observer: true,
+            breakpoints: {
+                576: {
+                    slidesPerView: 3,
+                    spaceBetween: 15
+                },
+
+            }
         });
     </script>
     <!-- 植感分享 點選效果 -->
