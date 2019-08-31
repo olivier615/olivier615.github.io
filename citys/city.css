@@ -1,0 +1,250 @@
+@charset "UTF-8";
+h1 {
+  font-size: 60px;
+}
+
+* {
+  margin: 0;
+  font-family: 微軟正黑體;
+  color: floralwhite;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  position: relative;
+}
+
+body {
+  background-color: black;
+}
+
+#page {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  #page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.city_view {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+}
+
+.city_view .Hongkong {
+  background-image: url(./Hongkong/Hongkong.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+.city_view .Malaysia {
+  background-image: url(./Malaysia/izuddin-helmi-adnan-vTveTqbaTNM-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+.city_view .Japan {
+  background-color: dimgray;
+  background-image: url(./japan/tower.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+.pos_1 {
+  width: 25%;
+  height: 100vh;
+  left: 0;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition: 1s cubic-bezier(0.35, 0.86, 0.77, 0.81);
+  transition: 1s cubic-bezier(0.35, 0.86, 0.77, 0.81);
+}
+
+.pos_2 {
+  width: 25%;
+  height: 100vh;
+  left: 25%;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition: 1s cubic-bezier(0.35, 0.86, 0.77, 0.81);
+  transition: 1s cubic-bezier(0.35, 0.86, 0.77, 0.81);
+}
+
+.pos_3 {
+  width: 50%;
+  height: 100vh;
+  left: 50%;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition: 1s cubic-bezier(0.35, 0.86, 0.77, 0.81);
+  transition: 1s cubic-bezier(0.35, 0.86, 0.77, 0.81);
+}
+
+@media (max-width: 1024px) {
+  .pos_1, .pos_2, .pos_3 {
+    height: 50vh;
+  }
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.content .content_pic {
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+}
+
+.content #pic_Japan {
+  background-image: url(./japan/bac.jpg);
+  z-index: -1;
+}
+
+.content #pic_Malaysia {
+  background-image: url(./Malaysia/bac.jpg);
+  z-index: -2;
+}
+
+.content #pic_Hongkong {
+  background-image: url(./Hongkong/bac.jpg);
+  z-index: -3;
+}
+
+.content nav {
+  position: absolute;
+  z-index: 100;
+}
+
+.content nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1% 0 1% 30%;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.content nav ul li {
+  margin-left: 50%;
+}
+
+@media (max-width: 850px) {
+  .content nav {
+    display: none;
+  }
+}
+
+.content .nav_box {
+  width: 50px;
+  background-color: rgba(49, 48, 49, 0.692);
+  float: right;
+  margin: 2%;
+  border-radius: 5px;
+  padding-top: calc(25px - 11.5px);
+  padding-bottom: calc(25px - 11.5px);
+  text-align: center;
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .content .nav_box {
+    display: block;
+  }
+}
+
+.content .city_name {
+  text-shadow: 0.2em 0.2em 0.2em black;
+  padding-top: 20%;
+  padding-left: 7%;
+}
+
+.location_bar {
+  width: 50vw;
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+}
+
+.location_bar .long_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.location_bar .long_box .location {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #c0106e80;
+  margin-top: 1%;
+  padding: 0.5em 0 0.5em 0;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    height: 50vh;
+  }
+  .content .content_pic {
+    height: 50vh;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .location_bar {
+    width: 100vw;
+    left: 0;
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 1024px) {
+  #city_name {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content .city_name {
+    padding-top: 10%;
+    padding-left: 7%;
+  }
+}
+
+.phone_nav {
+  display: none;
+}
+
+.phone_nav p {
+  padding-top: 10%;
+  text-align: center;
+  font-size: 0.5em;
+}
+/*# sourceMappingURL=city.css.map */
