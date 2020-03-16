@@ -1,5 +1,5 @@
 .body{
-    
+
     
 }
 .fullpage{
@@ -26,7 +26,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding:1%;
 }
 
 .icon{
@@ -36,6 +35,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin:3% 0 3% 0; 
 
 }
 
@@ -124,6 +124,8 @@
 #copy{
     font-size: 20PX; 
     border-radius: 10PX;
+    margin:3% 0 3% 0;
+    padding:2% ;
 }
 
 @media (max-width:750px){
@@ -137,18 +139,29 @@
 
     .contact_box{
         padding:5%;
+        height:30%
     }
 
     #copy{
         margin-top:5%;
         font-size: 40px;
+        padding:2%
     }
     .icon{
-        padding-bottom:5%;
+        padding-bottom:10%;
     }
 
     .inner_box p{
         padding-bottom:5%;
         font-size: 40px;
+    }
+
+    .cancel_btm{
+        height: 45px;
+        width: 45px;
+    }
+    .cancel_red{
+        height: 41px;
+        width: 41px;
     }
 }
