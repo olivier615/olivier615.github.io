@@ -22,7 +22,7 @@ body{
 /*页首*/
 .header{
     height: 80vh;
-    background-image: url(/img/bac_001.jpg);
+    background-image: url(./img/bac_001.jpg);
     background-repeat: no-repeat;
 
 }
@@ -112,7 +112,7 @@ padding: 10px 0 10px 0;
 /*三角形*/
 .triangle_block{
     width: 100%;
-    background-image: url(/img/bac_002.jpg);
+    background-image: url(./img/bac_002.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -161,17 +161,17 @@ padding: 10px 0 10px 0;
 }
 
 .explanation_pic01{
-    background-image: url(/img/bac_003.jpg);
+    background-image: url(./img/bac_003.jpg);
     background-size: cover;
 }
 
 .explanation_pic02{
-    background-image: url(/img/bac_004.jpg);
+    background-image: url(./img/bac_004.jpg);
     background-size: cover;
 }
 
 .explanation_pic03{
-    background-image: url(/img/bac_005.jpg);
+    background-image: url(./img/bac_005.jpg);
     background-size: cover;
 }
 
@@ -252,11 +252,11 @@ padding: 10px 0 10px 0;
 }
 
 .circle_pic01{
-    background-image: url(/img/bac_006.jpg);
+    background-image: url(./img/bac_006.jpg);
 }
 
 .circle_pic02{
-    background-image: url(/img/bac_007.jpg);
+    background-image: url(./img/bac_007.jpg);
 }
 
 .circle_title{
