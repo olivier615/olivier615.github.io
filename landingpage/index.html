@@ -24,25 +24,27 @@
             <div class="icon">
                 <img src="img/help.png" alt="">
             </div>
-            <div class="inner_box">
-                <p>
-                    飞艇.专家
-                </p>
-                <p>
-                    万人.好评
-                </p>
-            </div>
             <textarea id="input">
                 AAAAA
             </textarea>
             <p>
-                客服微信：宝儿
+                微信专员：宝儿
             </p>
-            <p id="text">
+            <p id="text1">
                 toyata422
             </p>
-            <button type="button" id="copy" onclick=copyText()>
+            
+            <button type="button" id="copy" onclick=copyText1()>
                 点击复制加微信
+            </button>
+            <p>
+                QQ专员：宝儿
+            </p>
+            <p id="text2">
+                uuuuuu
+            </p>
+            <button type="button" id="copy" onclick=copyText2()>
+                点击复制加QQ
             </button>
         </div>
     </div>
@@ -74,13 +76,22 @@
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script>
-        function copyText() {
-       var text = document.getElementById("text").innerText;
+        function copyText1() {
+       var text = document.getElementById("text1").innerText;
        var input = document.getElementById("input");
        input.value = text; // 修改文本框的内容
        input.select(); // 选中文本
        document.execCommand("copy"); // 执行浏览器复制命令
-       alert("复制成功,请在微信添加好友！");
+       alert("复制专员微信号toyata422成功,请在微信添加好友！");
+     }
+
+     function copyText2() {
+       var text = document.getElementById("text2").innerText;
+       var input = document.getElementById("input");
+       input.value = text; // 修改文本框的内容
+       input.select(); // 选中文本
+       document.execCommand("copy"); // 执行浏览器复制命令
+       alert("复制专员QQ号UUUU成功,请在QQ添加好友！");
      }
 
      $(".cancel_btm").click(function(){
