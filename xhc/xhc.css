@@ -331,6 +331,8 @@ padding: 10px 0 10px 0;
 }
 
 .left_arrow, .right_arrow{
+    width: 72px;
+    height: 72px;
     animation-name:oxxo;
     animation-duration:1.5s;
     animation-iteration-count:infinite;
