@@ -13,15 +13,13 @@
 </head>
 
 <body>
-    <!-- <div class="ad_jump">
+    <div class="ad_jump hide" id="ad_jump">
         <div class="contact_box">
             <div class="cancel_btm">
                 <div class="cancel_red">
                     <div class="bar bar01"></div>
                     <div class="bar bar02"></div>
                 </div>
-
-
             </div>
             <div class="icon">
                 <img src="img/help.png" alt="">
@@ -43,30 +41,28 @@
             <p id="text">
                 toyata422
             </p>
-
             <button type="button" id="copy" onclick=copyText()>
                 点击复制加微信
             </button>
-
         </div>
-    </div> -->
+    </div>
     
     <div class="fullpage">
         <div class="ad_flow">
-           
+            <div class="cancel_btm2">
+                <div class="cancel_red2">
+                    <div class="bar bar01"></div>
+                    <div class="bar bar02"></div>
+                </div>
+            </div>
         </div>
         <div class="pic">
             <img src="img/pic01.jpg" alt="新皇朝娱乐">
         </div>
-        <a class="wechat-copy" href='weixin://'>
-            <div class="pic">
-                <img src="img/pic04.jpg" alt="新皇朝娱乐">
-            </div>
-        </a>
         <div class="pic">
             <img src="img/pic02.jpg" alt="新皇朝娱乐">
         </div>
-        <div class="pic">
+        <div class="pic" id="show_point">
             <img src="img/pic03.jpg" alt="新皇朝娱乐">
         </div>
     </div>
@@ -76,7 +72,7 @@
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script>
-        /**function copyText() {
+        function copyText() {
        var text = document.getElementById("text").innerText;
        var input = document.getElementById("input");
        input.value = text; // 修改文本框的内容
@@ -87,7 +83,21 @@
 
      $(".cancel_btm").click(function(){
          $(".ad_jump").addClass("hide")
-     })**/
+     })
+     $(".cancel_btm2").click(function(){
+         $(".ad_flow").addClass("hide")
+     })
+
+     $(function(){
+        // 监听滚动事件
+        $(window).scroll(function(){
+        // 获得div的高度
+        var h = $("#show_point").offset().top;
+        if($(this).scrollTop()>h && $(this).scrollTop() < h+100){
+            $("#ad_jump").removeClass("hide");
+        }
+        });
+        })
     </script>
 
 
