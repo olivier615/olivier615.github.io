@@ -62,10 +62,10 @@
         <div class="pic">
             <img src="img/pic01.jpg" alt="新皇朝娱乐">
         </div>
-        <div class="pic">
+        <div class="pic"  id="show_point">
             <img src="img/pic02.jpg" alt="新皇朝娱乐">
         </div>
-        <div class="pic" id="show_point">
+        <div class="pic">
             <img src="img/pic03.jpg" alt="新皇朝娱乐">
         </div>
     </div>
@@ -106,7 +106,7 @@
         $(window).scroll(function(){
         // 获得div的高度
         var h = $("#show_point").offset().top;
-        if($(this).scrollTop()>h && $(this).scrollTop() < h+200){
+        if($(this).scrollTop()>h && $(this).scrollTop() < h+50){
             $("#ad_jump").removeClass("hide");
         }
         });
