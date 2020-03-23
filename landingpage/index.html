@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,17 @@
     <title>新皇朝娱乐</title>
     <link rel="stylesheet" href="resetcss.css">
     <link rel="stylesheet" href="7A.css">
-    <style>   
+    <style>
     </style>
 </head>
+
 <body>
-    <div class="ad_jump">
+    <!-- <div class="ad_jump">
         <div class="contact_box">
             <div class="cancel_btm">
                 <div class="cancel_red">
-                        <div class="bar bar01"></div>
-                        <div class="bar bar02"></div>
+                    <div class="bar bar01"></div>
+                    <div class="bar bar02"></div>
                 </div>
 
 
@@ -26,10 +28,10 @@
             </div>
             <div class="inner_box">
                 <p>
-                飞艇.专家
+                    飞艇.专家
                 </p>
                 <p>
-                万人.好评
+                    万人.好评
                 </p>
             </div>
             <textarea id="input">
@@ -41,22 +43,26 @@
             <p id="text">
                 toyata422
             </p>
-           
+
             <button type="button" id="copy" onclick=copyText()>
                 点击复制加微信
             </button>
-            
-        </div>
-    </div>
 
+        </div>
+    </div> -->
+    
     <div class="fullpage">
+        <div class="ad_flow">
+           
+        </div>
         <div class="pic">
             <img src="img/pic01.jpg" alt="新皇朝娱乐">
         </div>
-        <a class="wechat-copy"  href='weixin://'><div class="pic">
-            <img src="img/pic04.jpg" alt="新皇朝娱乐">
-        </div>
-    </a>
+        <a class="wechat-copy" href='weixin://'>
+            <div class="pic">
+                <img src="img/pic04.jpg" alt="新皇朝娱乐">
+            </div>
+        </a>
         <div class="pic">
             <img src="img/pic02.jpg" alt="新皇朝娱乐">
         </div>
@@ -64,26 +70,27 @@
             <img src="img/pic03.jpg" alt="新皇朝娱乐">
         </div>
     </div>
-    
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script>
-       function copyText() {
-      var text = document.getElementById("text").innerText;
-      var input = document.getElementById("input");
-      input.value = text; // 修改文本框的内容
-      input.select(); // 选中文本
-      document.execCommand("copy"); // 执行浏览器复制命令
-      alert("复制成功,请在微信添加好友！");
-    }
+        /**function copyText() {
+       var text = document.getElementById("text").innerText;
+       var input = document.getElementById("input");
+       input.value = text; // 修改文本框的内容
+       input.select(); // 选中文本
+       document.execCommand("copy"); // 执行浏览器复制命令
+       alert("复制成功,请在微信添加好友！");
+     }
 
-    $(".cancel_btm").click(function(){     
-        $(".ad_jump").addClass("hide")
-    })
+     $(".cancel_btm").click(function(){
+         $(".ad_jump").addClass("hide")
+     })**/
     </script>
 
-    
+
 </body>
+
 </html>
