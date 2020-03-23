@@ -165,25 +165,26 @@
     position: fixed;
     right:0;
     top:70%;
-    background-image: url(./img/pic06_pc.png);
+
+}
+
+.cancel_btm2{
+    position: absolute;
+    top:0;
+
 }
 
 @media (max-width:450px){
     .ad_flow{
         width: 75px;
-        height: 150px;
-        background-image: url(./img/pic06_mo.png);
+        height: 100px;
+    }
+    .ad_flow img{
+        width: 75px;
+        height: 100px;
         background-repeat: no-repeat;
+
     }
 
-    .cancel_red{
-        height: 26px;
-        width: 26px;
-        background-color: crimson;
-        border-radius: 50%;
-        position: relative;
-        
-        
-    }
 }
 
