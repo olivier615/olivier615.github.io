@@ -11,6 +11,7 @@ body{
 
 .fullpage{
     max-width: 960px;
+    overflow: hidden;
 }
 
 @media (max-width:600px){
@@ -214,6 +215,9 @@ padding: 10px 0 10px 0;
 /*圆饼区*/
 .hard_start{
     margin-bottom: 2%;
+    background-image: url(./img/bac_009.jpg);
+    background-size: cover;
+    padding-bottom: 2%;
 }
 .hard_start h2{
     font-size:36px;
@@ -320,6 +324,24 @@ padding: 10px 0 10px 0;
     border: #434343 solid 5px;
     margin:0 3% 0 3%;
 
+}
+
+.left_arrow, .right_arrow{
+    animation-name:oxxo;
+    animation-duration:1.5s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes oxxo{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 100;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 
 @media (max-width:600px){
