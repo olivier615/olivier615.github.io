@@ -5,7 +5,7 @@
 body{
     display: flex;
     justify-content: center;
-    
+    background-color: rgb(189, 187, 187);
 }
 
 
@@ -302,6 +302,10 @@ padding: 10px 0 10px 0;
 /*圆饼区结束*/
 
 /*联络区*/
+
+.how_to{
+    background-color: rgb(253, 253, 253);
+}
 .how_to h2{
     font-size:36px;
     font-family: Arial, Helvetica, sans-serif, 黑体;
@@ -322,7 +326,7 @@ padding: 10px 0 10px 0;
     height: 250px;
     border-radius: 25px;
     border: #434343 solid 5px;
-    margin:0 3% 0 3%;
+    margin:0 3% 5% 3%;
 
 }
 
@@ -363,7 +367,7 @@ padding: 10px 0 10px 0;
     font-weight: bold;
     padding:1% 0 1% 0;
     letter-spacing: 25px;
-    margin-top:5%;
+
 }
 
 @media (max-width:600px){
