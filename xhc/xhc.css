@@ -134,14 +134,12 @@ padding: 10px 0 10px 0;
     height: 250px;
     background-color: #0C2E3A;
     display: flex;
-    margin-bottom:1% ;
 }
 
 .explanation_inner_mid{
     height: 250px;
     background-color: #0C2E3A;
     display: flex;
-    margin-bottom:1% ;
 }
 
 /*斜切三层 中间反向*/
@@ -184,6 +182,27 @@ padding: 10px 0 10px 0;
     align-items: center;
     padding: 0 5% 0 1%;
 }
+
+.explanation_text .more{
+    font-family: Arial, Helvetica, sans-serif, 黑体;
+    color: white;
+    align-self: center;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 1px white solid;
+    padding:10px;
+    border-radius: 6px;
+    transition-duration: 1.5s;
+}
+
+.explanation_text .more:hover{
+    background-color:white;
+    color:#0C2E3A ;
+    transition-duration: 0.5s;
+}
+
+
+
 
 .explanation_text h2{
     font-size: 42px;
@@ -306,8 +325,8 @@ padding: 10px 0 10px 0;
 .how_to{
     background-color: rgb(253, 253, 253);
 }
-.how_to h2{
-    font-size:36px;
+.how_to h2,.how_to p{
+    font-size:26px;
     font-family: Arial, Helvetica, sans-serif, 黑体;
     color: #434343;
     text-align: center;
@@ -328,6 +347,10 @@ padding: 10px 0 10px 0;
     border: #434343 solid 5px;
     margin:0 3% 5% 3%;
 
+}
+.qr_code_pic img{
+    width: 100%;
+    border-radius: 25px;
 }
 
 .left_arrow, .right_arrow{
@@ -379,3 +402,68 @@ padding: 10px 0 10px 0;
         font-weight: unset;
     }
 }
+
+/*了解更多 延伸区*/
+.explanation_sys,.explanation_mon ,.explanation_pep{
+    width: 100%;
+    padding:2%;
+    background-color: #0C2E3A;
+}
+
+.explanation_box{
+    margin-bottom: 1%;
+}
+
+.fall_slide{
+    width: 100%;
+}
+
+.sys_block , .mon_block , .pep_block{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:600px){
+    .sys_block , .mon_block , .pep_block{
+        flex-direction: column;
+        align-items: center;
+    } 
+}
+
+
+.sys_inner, .mon_inner, .pep_inner {
+    width: 33%;
+    font-family: Arial, Helvetica, sans-serif, 黑体;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width:600px){
+    .sys_inner, .mon_inner, .pep_inner{
+        width: 100%;
+    }
+}
+.sys_icon, .mon_icon, .pep_icon{
+    margin-top: 30px;
+
+}
+
+.sys_text, .mon_text, .pep_text{
+    margin-top: 30px;
+    line-height: 25px;
+
+}
+
+@media (max-width:950px){
+    .fall_slide img{
+        width: 100vw;
+    }
+}
+
+
+
+
