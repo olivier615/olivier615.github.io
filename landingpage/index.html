@@ -21,37 +21,20 @@
                     <div class="bar bar02"></div>
                 </div>
             </div>
-            <div class="icon">
-                <img src="img/help.png" alt="">
+            <div class="qr_block">
+                <img   src="" id="qr_img3" alt="">
+                <p>复制二维码微信辨识加好友</p>
             </div>
-            <textarea id="input">
-                AAAAA
-            </textarea>
-            <!-- <p>
-                微信专员:宝儿
-            </p>
-            <p id="text1">
-                toyata422
-            </p>
-            
-          <button type="button" id="copy" onclick=copyText1()>
-                点击复制加微信
-            </button> -->
-            <p>
-                QQ专员:菀菀
-            </p>
-            <p id="text2">
-                2045786435
-            </p>
-            <button type="button" id="copy" onclick=copyText2()>
-                点击复制加QQ
-            </button>
+            <div class="qr_block">
+                <img   src="/img/qr/qq01.jpg" alt="">
+                <p>复制二维码QQ辨识加好友</p>
+            </div>
         </div>
     </div>
     
     <div class="fullpage">
         <div class="ad_flow">
-            <a href="./img/pic07.jpg" target="_top"><img src="./img/pic06_pc.png" alt=""></a>
+            <img src="./img/pic06_pc.png" alt="">
                 <div class="cancel_btm2">
                     <div class="cancel_red2">
                         <div class="bar bar01"></div>
@@ -60,13 +43,24 @@
                 </div>
         </div>
         <div class="pic">
-            <img src="img/pic08.jpg" alt="新皇朝娱乐">
+            <img src="img/pic00.jpg" alt="新皇朝娱乐">
+        </div>
+        <div class="qr_block" >
+            <img src="" id="qr_img1"  alt="">
+            <p>复制二维码微信辨识加好友</p>
         </div>
         <div class="pic">
-            <img src="img/pic02.jpg" alt="新皇朝娱乐">
+            <img src="img/pic01.jpg" alt="新皇朝娱乐">
         </div>
         <div class="pic"  id="show_point">
-            <img src="img/pic09.jpg" alt="新皇朝娱乐">
+            <img src="img/pic02.jpg" alt="新皇朝娱乐">
+        </div>
+        <div class="pic">
+            <img src="img/pic03.jpg" alt="新皇朝娱乐">
+        </div>
+        <div class="qr_block">
+            <img   src="" id="qr_img2" alt="">
+            <p>复制二维码微信辨识加好友</p>
         </div>
     </div>
 
@@ -101,6 +95,10 @@
          $(".ad_flow").addClass("hide")
      })
 
+     $(".ad_flow").click(function(){
+        $(".ad_jump").removeClass("hide")
+     })
+
      $(function(){
         // 监听滚动事件
         $(window).scroll(function(){
@@ -111,6 +109,21 @@
         }
         });
         })
+
+        //随机显示客服//
+        var imgCount = 4;
+
+        var randomCount = Math.round(Math.random() * (imgCount - 1)) + 1;
+        var images = new Array
+                images[1] = "img/qr/wx01.jpg",
+                images[2] = "img/qr/wx02.jpg",
+                images[3] = "img/qr/wx03.jpg",
+                images[4] = "img/qr/wx04.jpg",
+        //document.getElementById("qr_img").style.backgroundImage = "url("+ images[randomCount] + ")"; 
+        document.getElementById("qr_img1").src= images[randomCount]; 
+        document.getElementById("qr_img2").src= images[randomCount]; 
+        document.getElementById("qr_img3").src= images[randomCount]; 
+
     </script>
 
 

@@ -20,7 +20,7 @@
     opacity: 1;
 }
 .contact_box{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.87) ;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     position: absolute;
     border-radius: 15px;
@@ -32,6 +32,18 @@
     width: 10% ;
     min-width: 300px;
 }
+.contact_box .qr_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+.contact_box img{
+    width: 200px;
+    
+}
+
 
 .icon{
     width: 100%;
@@ -165,7 +177,7 @@
     position: fixed;
     right:0;
     top:70%;
-
+    cursor: pointer;
 }
 
 .cancel_btm2{
@@ -191,4 +203,9 @@
 }
 
 
+.qr_block p{
+    font-family: Arial, Helvetica, sans-serif, 黑体 ; 
+    font-size: 20PX;
+    text-align: center;
+}
 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="card">
+
+    </div>
+
+    <script>
+        //所有鄉鎮市的天氣資料
+        var locations =[];
+
+        fetch('https://opendata.cwb.gov.tw/fileapi/v1/opendataapi/F-D0047-091?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D&format=JSON')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (myJson) {
+                locations = myJson.cwbopendata.dataset.locations.location;
+                var temp = locations[5].weatherElement[0].time[0].elementValue.value;
+                var rain = locations[5].weatherElement[9].time[0].elementValue.value;
+
+                var card = document.querySelector(".card");
+                card.innerHTML = `
+                <h1>溫度為:${temp}</h1>
+                <h1>降雨機率為${rain}%</h1>
+                `;
+            });
+    </script>
+</body>
+
+</html>
